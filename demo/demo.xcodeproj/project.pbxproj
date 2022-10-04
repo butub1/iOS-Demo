@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BDC6DB028EC81B40018B33B /* DMRegisterCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDC6DAF28EC81B40018B33B /* DMRegisterCenter.m */; };
+		2BDC6DB328EC82200018B33B /* DMSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDC6DB228EC82200018B33B /* DMSampleViewController.m */; };
 		3D573922455E87818D0F834F /* Pods_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09956D5D3ABD1205087CF51 /* Pods_demo.framework */; };
 		A89B0F8F07C18AFC2B134A0A /* Pods_demo_demoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D684A93AD525AF762CB1B0BE /* Pods_demo_demoUITests.framework */; };
 		CF2EA286630027850C7DD0B4 /* Pods_demoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98691D64FB20531A69435FC1 /* Pods_demoTests.framework */; };
@@ -44,6 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2BDC6DAE28EC81B40018B33B /* DMRegisterCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMRegisterCenter.h; sourceTree = "<group>"; };
+		2BDC6DAF28EC81B40018B33B /* DMRegisterCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMRegisterCenter.m; sourceTree = "<group>"; };
+		2BDC6DB128EC82200018B33B /* DMSampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMSampleViewController.h; sourceTree = "<group>"; };
+		2BDC6DB228EC82200018B33B /* DMSampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMSampleViewController.m; sourceTree = "<group>"; };
+		2BDC6DB428EC82770018B33B /* DMMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMMacros.h; sourceTree = "<group>"; };
 		72AD38E9D7B2EE9C79087B76 /* Pods-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo.debug.xcconfig"; path = "Target Support Files/Pods-demo/Pods-demo.debug.xcconfig"; sourceTree = "<group>"; };
 		98691D64FB20531A69435FC1 /* Pods_demoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_demoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46D882C688E77691A204DCA /* Pods-demo-demoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo-demoUITests.debug.xcconfig"; path = "Target Support Files/Pods-demo-demoUITests/Pods-demo-demoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +117,11 @@
 		2BC2197428D0919D00F722F9 /* DI */ = {
 			isa = PBXGroup;
 			children = (
+				2BDC6DAE28EC81B40018B33B /* DMRegisterCenter.h */,
+				2BDC6DAF28EC81B40018B33B /* DMRegisterCenter.m */,
+				2BDC6DB128EC82200018B33B /* DMSampleViewController.h */,
+				2BDC6DB228EC82200018B33B /* DMSampleViewController.m */,
+				2BDC6DB428EC82770018B33B /* DMMacros.h */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -469,8 +481,10 @@
 				D55FED5E287528E3003099D4 /* DMBootTableViewController.m in Sources */,
 				D568B6622863147E00FE8FA1 /* ViewController.m in Sources */,
 				D568B65C2863147E00FE8FA1 /* AppDelegate.m in Sources */,
+				2BDC6DB028EC81B40018B33B /* DMRegisterCenter.m in Sources */,
 				D568B66D2863148200FE8FA1 /* main.m in Sources */,
 				D568B65F2863147E00FE8FA1 /* SceneDelegate.m in Sources */,
+				2BDC6DB328EC82200018B33B /* DMSampleViewController.m in Sources */,
 				D568B6922864975900FE8FA1 /* DMHalfScreenViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
