@@ -22,6 +22,8 @@ typedef void (^DMItemConfigBlock)(DMRegisterItem *item);
 @interface DMRegisterCenter : NSObject
 
 @property (nonatomic, readonly, nonnull) NSDictionary<NSString *, DMRegisterItem *> *demoItemsDict;
+@property (nonatomic, readonly, nonnull) NSArray<NSString *> *demoKeysArray;
+
 
 - (void)registerClass:(NSString *)class withBlock:(DMItemConfigBlock _Nullable)block;
 

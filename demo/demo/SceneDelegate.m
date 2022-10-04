@@ -6,6 +6,7 @@
 //
 
 #import "SceneDelegate.h"
+#import "DMBootTableViewController.h"
 #import "DMSampleViewController.h"
 
 @interface SceneDelegate ()
@@ -21,7 +22,7 @@
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
     UIWindowScene *windowSecne = [[UIWindowScene alloc] initWithSession:session connectionOptions:connectionOptions];
     self.window = [[UIWindow alloc] initWithWindowScene:windowSecne];
-    self.window.rootViewController = [[DMSampleViewController alloc] init];
+    self.window.rootViewController = [[DMBootTableViewController alloc] init];
     [self.window makeKeyAndVisible];
 }
 

@@ -60,7 +60,12 @@
 
 - (NSDictionary<NSString *,DMRegisterItem *> *)demoItemsDict
 {
-    return _demosDict;
+    return self.demosDict;
+}
+
+- (NSArray<NSString *> *)demoKeysArray
+{
+    return [self.demosDict allKeys];
 }
 
 #pragma mark - getter

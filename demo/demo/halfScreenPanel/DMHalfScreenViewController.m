@@ -9,6 +9,12 @@
 
 #import <Foundation/Foundation.h>
 
+#import "DMMacros.h"
+
+dm_registerDemo(DMHalfScreenViewController, {
+    item.identifier = @"HalfScreen.1";
+})
+
 @interface DMHalfScreenViewController ()
 
 @end
