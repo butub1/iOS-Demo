@@ -7,6 +7,8 @@
 
 #import "DMHalfScreenViewController.h"
 
+#import <Foundation/Foundation.h>
+
 @interface DMHalfScreenViewController ()
 
 @end

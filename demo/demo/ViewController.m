@@ -48,7 +48,7 @@
     imageView.accessibilityTraits = UIAccessibilityTraitImage;
     imageView.isAccessibilityElement = YES;
     [self.view addSubview:imageView];
-    
+    NSLog(@"%s %d %s", __FUNCTION__, __LINE__, __FILE__);
     
 }
 
