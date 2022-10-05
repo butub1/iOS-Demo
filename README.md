@@ -114,7 +114,7 @@ demo 3 --> subVC
 
 ## 4.实现 // Implementation
 
-dm_registerDemo 宏 最终生成”一条分类“，是的，一条 : ) 合乎文法 : )
+dm_registerDemo 宏 最终生成”一条分类“，一条 : ) 合乎文法 : )
 
 ```objc
 @interface DMRegisterCenter( DMSampleViewController ) - (void)user_registerItemsFor_DMSampleViewController;@end; @implementation DMRegisterCenter( DMSampleViewController ) - (void)user_registerItemsFor_DMSampleViewController{ [self registerClass:@"DMSampleViewController" withBlock:^(DMRegisterItem *item) { { item.identifier = @"Sample.UIButton";} }]; }@end
