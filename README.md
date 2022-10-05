@@ -34,7 +34,7 @@ dm_registerDemo(DMSampleViewController, {
 @end
 ```
 
-![](./images/demo.gif)
+![](./images/demo.gif | width=100)
 
 ## 2. 想法 // Ideas
 
