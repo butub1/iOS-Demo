@@ -53,7 +53,6 @@
         if ([methodName hasPrefix:@"user_"]) {
             [self performSelector:methodSelector];
         }
-//        NSLog(@"%s", sel_getName(method_getName(methods[i])));
     }
     free(methods);
 }
