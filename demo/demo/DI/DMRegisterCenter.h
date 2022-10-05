@@ -10,10 +10,15 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DMRegisterItem : NSObject
+/// required, use for search
 @property (nonatomic, copy, nonnull) NSString *identifier;
-@property (nonatomic, copy, nullable) NSString *author;
-@property (nonatomic, copy, nullable) NSURL *iconURL;
+/// required, auto generate
 @property (nonatomic, copy) Class targetClass;
+/// optional
+@property (nonatomic, copy, nullable) NSString *author;
+@property (nonatomic, copy, nullable) NSString *email;
+@property (nonatomic, copy, nullable) NSURL *iconURL;
+
 @end
 
 
