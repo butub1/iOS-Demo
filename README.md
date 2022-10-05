@@ -56,7 +56,7 @@ demo 3 --> subVC
 然而有了这个想法之后，越来越多的想法开始出现。
 
 1. 要方便书写，避免重复劳动，避免如下情况:
-
+   
    ```objc
    #import "SceneDelegate.h"
    #import "DMBaseViewController.h"
@@ -69,8 +69,11 @@ demo 3 --> subVC
    #import "DMPassThroughViewController.h"
    #import "DMSampleViewController.h"
    ```
+
 2. 要有说明文字，要有 icon、author、hyperlink
+
 3. 要易于检索，搞个简单的搜索的VC， 方便跳转
+
 4. 要解耦，或者容易修改，上述的信息，在注入后，要能容易拿取到。
 
 ## 3. 设计 // Design
@@ -86,8 +89,9 @@ demo 3 --> subVC
 但是在 Objc 中，我确实没有找到比较方便的实现，但是又非常想要这种效果。考虑过几种实现:
 
 1. VC 继承的方式进行注入 --> Objc 不能多继承, 限制了 Demo 的能力
-2. 接口注入到全局 mountArray  --> 添加操作需要运行时完成，否则需要静态注入。
 
+2. 接口注入到全局 mountArray  --> 添加操作需要运行时完成，否则需要静态注入。
+   
    ```objc
    /// in mount file
    static NSArray<id<DMInjectProtocol>> *mountArray = @[
@@ -97,12 +101,13 @@ demo 3 --> subVC
    @interface DMSampleViewController()<DMInjectProtocol>
    @end
    ```
-3. 因此不得不找些运行时注入的方式，或者编译预处理的操作，考虑过
 
+3. 因此不得不找些运行时注入的方式，或者编译预处理的操作，考虑过
+   
    1. LazyRegister， 注入函数指针到 data 段，会在 section 引入的时候注入，运行时机可选。
    2. load 方法， 运行时机在 main 函数之前，但是需要写 C 方法。
    3. Category 运行时注入，生成特定函数，但是 Demo 多了之后，会生成很多小Category. 【Selected】
-
+   
    因为是 demo 项目，没有必要过度设计，所以选择了简单的方式实现，遇到问题再优化。
 
 ## 4.约定大于配置 // convention over configuration
@@ -134,3 +139,27 @@ dm_registerDemo 宏 最终生成”一条分类“，是的，一条 : ) 合乎�
 虽然用 user_ 打头这个方式，看起来很trick, 但是很方便。
 
 目前的这种方式，对于VC没有任何的约束，你可以去做任何的事情，我来负责检索，提供方便的工具。
+
+约定:
+
+1.  dm_registerDemo 的第一个参数是需要注入的 ViewController 类名
+
+2.  dm_registerDemo 中使用 item 对象进行配置
+
+3.  identifier 的命名，使用`.`进行分隔，例如 "Sample.Button.Basic", 将用于检索，一般不超过三段。
+
+
+
+## 5. TODO
+
+1. 完善初始界面
+
+2. 添加检索功能
+
+3. 添加基础UI组件：用户信息，代码块，说明文字。
+
+
+
+## 6.MileStone
+
+* 2022-10-5: complete injection
