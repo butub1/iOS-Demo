@@ -34,7 +34,7 @@ dm_registerDemo(DMSampleViewController, {
 @end
 ```
 
-![](./images/demo.gif | width=100)
+<img src="https://github.com/butub1/iOS-Demo/blob/main/images/demo.gif" width="100">
 
 ## 2. 想法 // Ideas
 
