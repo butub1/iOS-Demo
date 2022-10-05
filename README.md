@@ -34,6 +34,8 @@ dm_registerDemo(DMSampleViewController, {
 @end
 ```
 
+![](./images/demo.gif)
+
 ## 2. 想法 // Ideas
 
 日常写了一些 demo，但是重复劳动很多，并且无法很好收集整理起来，供后续查找，更无法分享给别人了。所以希望有个 demo 列表， 像下边这个样子。
@@ -144,25 +146,16 @@ dm_registerDemo 宏 最终生成”一条分类“，是的，一条 : ) 合乎�
 
 约定:
 
-1.  dm_registerDemo 的第一个参数是需要注入的 ViewController 类名
-
-2.  dm_registerDemo 中使用 item 对象进行配置
-
-3.  identifier 的命名，使用`.`进行分隔，例如 "Sample.Button.Basic", 将用于检索，一般不超过三段。
-
+1. dm_registerDemo 的第一个参数是需要注入的 ViewController 类名
+2. dm_registerDemo 中使用 item 对象进行配置
+3. identifier 的命名，使用`.`进行分隔，例如 "Sample.Button.Basic", 将用于检索，一般不超过三段。
 4. 目录放置根据 identifier 的分段分目录放置
-
-
 
 ## 6. TODO
 
 1. 完善初始界面
-
 2. 添加检索功能
-
 3. 添加基础UI组件：用户信息，代码块，说明文字。
-
-
 
 ## 7.MileStone
 
