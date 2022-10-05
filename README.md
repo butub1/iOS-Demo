@@ -110,7 +110,7 @@ demo 3 --> subVC
    
    因为是 demo 项目，没有必要过度设计，所以选择了简单的方式实现，遇到问题再优化。
 
-## 4.约定大于配置 // convention over configuration
+## 4.实现 // Implementation
 
 dm_registerDemo 宏 最终生成”一条分类“，是的，一条 : ) 合乎文法 : )
 
@@ -140,6 +140,8 @@ dm_registerDemo 宏 最终生成”一条分类“，是的，一条 : ) 合乎�
 
 目前的这种方式，对于VC没有任何的约束，你可以去做任何的事情，我来负责检索，提供方便的工具。
 
+## 5.约定大于配置 // convention over configuration
+
 约定:
 
 1.  dm_registerDemo 的第一个参数是需要注入的 ViewController 类名
@@ -148,9 +150,11 @@ dm_registerDemo 宏 最终生成”一条分类“，是的，一条 : ) 合乎�
 
 3.  identifier 的命名，使用`.`进行分隔，例如 "Sample.Button.Basic", 将用于检索，一般不超过三段。
 
+4. 目录放置根据 identifier 的分段分目录放置
 
 
-## 5. TODO
+
+## 6. TODO
 
 1. 完善初始界面
 
@@ -160,6 +164,6 @@ dm_registerDemo 宏 最终生成”一条分类“，是的，一条 : ) 合乎�
 
 
 
-## 6.MileStone
+## 7.MileStone
 
 * 2022-10-5: complete injection
