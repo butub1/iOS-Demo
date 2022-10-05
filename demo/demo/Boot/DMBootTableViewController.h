@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /// 初始界面，装载DemoItem
-@interface DMBootTableViewController : UITableViewController
+@interface DMBootTableViewController : UIViewController
 
 
 
