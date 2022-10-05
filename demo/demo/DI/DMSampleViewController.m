@@ -11,7 +11,7 @@
 
 
 dm_registerDemo(DMSampleViewController, {
-    item.identifier = @"Sample.UIButton";
+    item.identifier = @"DI.Sample";
     item.author = @"butub";
     item.email = @"butub666@gmail.com";
 })

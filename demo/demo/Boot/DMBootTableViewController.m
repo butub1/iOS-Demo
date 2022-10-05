@@ -13,7 +13,7 @@
 #import "DMSampleViewController.h"
 
 @interface DMBootTableViewController()
-//<UITableViewDelegate, UITableViewDataSource>
+<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray<NSString *> *keysArray;
