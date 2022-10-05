@@ -12,6 +12,8 @@
 
 dm_registerDemo(DMSampleViewController, {
     item.identifier = @"Sample.UIButton";
+    item.author = @"butub";
+    item.email = @"butub666@gmail.com";
 })
 
 @interface DMSampleViewController ()
@@ -23,6 +25,14 @@ dm_registerDemo(DMSampleViewController, {
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor greenColor];
+}
+
+- (UIModalPresentationStyle)modalPresentationStyle
+{
+//    return UIModalPresentationOverFullScreen;
+//    return UIModalPresentationCustom;
+    return UIModalPresentationPopover;
+//    return UIModalPresentationFullScreen;
 }
 
 @end
