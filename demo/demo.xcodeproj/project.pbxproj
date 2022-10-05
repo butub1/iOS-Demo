@@ -126,6 +126,14 @@
 			path = DI;
 			sourceTree = "<group>";
 		};
+		2BDC6DB528ED80B40018B33B /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				D568B68F2864971F00FE8FA1 /* halfScreen */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
 		89E1E62DB422A466C6D06241 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,10 +188,10 @@
 		D568B6592863147E00FE8FA1 /* demo */ = {
 			isa = PBXGroup;
 			children = (
+				2BDC6DB528ED80B40018B33B /* Sample */,
 				2BC2197428D0919D00F722F9 /* DI */,
 				D55FED5B2875289E003099D4 /* Boot */,
 				D55FED5728752508003099D4 /* Arch */,
-				D568B68F2864971F00FE8FA1 /* halfScreenPanel */,
 				D568B65A2863147E00FE8FA1 /* AppDelegate.h */,
 				D568B65B2863147E00FE8FA1 /* AppDelegate.m */,
 				D568B65D2863147E00FE8FA1 /* SceneDelegate.h */,
@@ -216,13 +224,13 @@
 			path = demoUITests;
 			sourceTree = "<group>";
 		};
-		D568B68F2864971F00FE8FA1 /* halfScreenPanel */ = {
+		D568B68F2864971F00FE8FA1 /* halfScreen */ = {
 			isa = PBXGroup;
 			children = (
 				D568B6902864975800FE8FA1 /* DMHalfScreenViewController.h */,
 				D568B6912864975800FE8FA1 /* DMHalfScreenViewController.m */,
 			);
-			path = halfScreenPanel;
+			path = halfScreen;
 			sourceTree = "<group>";
 		};
 		D5AFC56C2F85C2915C1DD0EE /* Pods */ = {

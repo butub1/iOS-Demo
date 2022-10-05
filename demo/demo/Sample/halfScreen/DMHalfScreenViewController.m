@@ -12,7 +12,7 @@
 #import "DMMacros.h"
 
 dm_registerDemo(DMHalfScreenViewController, {
-    item.identifier = @"HalfScreen.1";
+    item.identifier = @"Sample.HalfScreen.VC实现";
 })
 
 @interface DMHalfScreenViewController ()
@@ -34,6 +34,7 @@ dm_registerDemo(DMHalfScreenViewController, {
 
 - (void)setupUI
 {
+    self.view.backgroundColor = [UIColor grayColor];
     /// setup UI
     CGRect panelFrame = CGRectMake(0, 350, self.view.bounds.size.width, 350);
     UIView *panelView = [[UIView alloc] initWithFrame:panelFrame];
@@ -60,14 +61,12 @@ dm_registerDemo(DMHalfScreenViewController, {
     }];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (UIModalPresentationStyle)modalPresentationStyle
+{
+    return UIModalPresentationOverFullScreen;
+//    return UIModalPresentationCustom;
+//    return UIModalPresentationPopover;
+//    return UIModalPresentationFullScreen;
 }
-*/
 
 @end
