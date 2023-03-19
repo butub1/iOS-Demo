@@ -7,8 +7,15 @@
 
 #import <Foundation/Foundation.h>
 
+
+/**
+ 这里还需要更多的设计，应该设计成这一个样子
+  DMRegisterCent
+ */
+
 NS_ASSUME_NONNULL_BEGIN
 
+/// 注册的item
 @interface DMRegisterItem : NSObject
 /// required, use for search
 @property (nonatomic, copy, nonnull) NSString *identifier;
@@ -21,16 +28,29 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+/// 注册的Cell
+@interface DMRegisterCellItem : NSObject
+
+@property (nonatomic, copy, nonnull) NSString *cellClass;
+@property (nonatomic, copy, nonnull) NSString *identifier;
+
+@end
+
 
 typedef void (^DMItemConfigBlock)(DMRegisterItem *item);
+typedef void (^DMCellItemConfigBlock)(DMRegisterCellItem *cellItem);
 
+/// 注册容器, 一个简易实现
 @interface DMRegisterCenter : NSObject
 
 @property (nonatomic, readonly, nonnull) NSDictionary<NSString *, DMRegisterItem *> *demoItemsDict;
 @property (nonatomic, readonly, nonnull) NSArray<NSString *> *demoKeysArray;
 
 
-- (void)registerClass:(NSString *)class withBlock:(DMItemConfigBlock _Nullable)block;
+- (void)registerClass:(NSString *)class withBlock:(DMItemConfigBlock _Nullable)block; // 注册VC用
+- (void)registerCellItemForVC:(NSString *)class WithBlock:(DMCellItemConfigBlock _Nullable)block;
+
+@property (nonatomic, readonly, nonnull) NSDictionary<NSString *, DMRegisterCellItem *> *demoCellItemsDict;
 
 + (instancetype)sharedInstance;
 

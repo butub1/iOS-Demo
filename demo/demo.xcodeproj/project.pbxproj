@@ -43,6 +43,7 @@
 		D568B6832863148200FE8FA1 /* demoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D568B6822863148200FE8FA1 /* demoUITestsLaunchTests.m */; };
 		D568B6922864975900FE8FA1 /* DMHalfScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D568B6912864975800FE8FA1 /* DMHalfScreenViewController.m */; };
 		D5A82FD7287A62FB00A3E48E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D5A82FD6287A62FB00A3E48E /* README.md */; };
+		D5D480AA29C7384D0082D464 /* DMUIButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D480A929C7384D0082D464 /* DMUIButtonViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +132,8 @@
 		D568B6902864975800FE8FA1 /* DMHalfScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMHalfScreenViewController.h; sourceTree = "<group>"; };
 		D568B6912864975800FE8FA1 /* DMHalfScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMHalfScreenViewController.m; sourceTree = "<group>"; };
 		D5A82FD6287A62FB00A3E48E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D5D480A829C7384D0082D464 /* DMUIButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMUIButtonViewController.h; sourceTree = "<group>"; };
+		D5D480A929C7384D0082D464 /* DMUIButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMUIButtonViewController.m; sourceTree = "<group>"; };
 		D684A93AD525AF762CB1B0BE /* Pods_demo_demoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_demo_demoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D89F87C641CFFA5581B7A912 /* Pods-demoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demoTests.debug.xcconfig"; path = "Target Support Files/Pods-demoTests/Pods-demoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DA6F7D93F43CBEA70FFD199B /* Pods-demo-demoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo-demoUITests.release.xcconfig"; path = "Target Support Files/Pods-demo-demoUITests/Pods-demo-demoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -180,6 +183,7 @@
 		2BDC6DB528ED80B40018B33B /* Sample */ = {
 			isa = PBXGroup;
 			children = (
+				D5D480A729C738290082D464 /* UIButton */,
 				2BDC6DF828ED82880018B33B /* Syntax */,
 				2BDC6DB628ED82730018B33B /* Gesture */,
 				2BDC6DBF28ED82740018B33B /* Layout */,
@@ -443,6 +447,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D5D480A729C738290082D464 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				D5D480A829C7384D0082D464 /* DMUIButtonViewController.h */,
+				D5D480A929C7384D0082D464 /* DMUIButtonViewController.m */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -684,6 +697,7 @@
 			files = (
 				2BDC6DE828ED82750018B33B /* DMPassThroughViewController.m in Sources */,
 				2BDC6DE728ED82750018B33B /* DMMemmoryTestViewController.m in Sources */,
+				D5D480AA29C7384D0082D464 /* DMUIButtonViewController.m in Sources */,
 				2BDC6DE928ED82750018B33B /* DMLayoutViewController.m in Sources */,
 				D55FED5A287526FC003099D4 /* DMBaseViewController.m in Sources */,
 				D55FED5E287528E3003099D4 /* DMBootTableViewController.m in Sources */,
